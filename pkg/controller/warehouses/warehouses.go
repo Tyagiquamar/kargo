@@ -62,7 +62,7 @@ func (c ReconcilerConfig) Name() string {
 // reconciler reconciles Warehouse resources.
 type reconciler struct {
 	client             client.Client
-	freightClient freightclient.FreightClient
+	freightClient      freightclient.FreightClient
 	credentialsDB      credentials.Database
 	subscriberRegistry subscription.SubscriberRegistry
 	cfg                ReconcilerConfig
